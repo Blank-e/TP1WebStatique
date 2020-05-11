@@ -1,5 +1,9 @@
+<!DOCTYPE html>
 <html lang="fr">
     <head>
+        <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
         <title>
             TP1
         </title>
@@ -8,5 +12,54 @@
         <a href="tables.html">Tableaux&verbar;</a>
         <a href="textlistforms.html">Textes&amp;Listes&amp;Formulaires&verbar;</a>
         <a href="medias.html">Medias</a>
+        <hr>
+        <ol>
+            <li><a href="#Images">Images</a></li>
+            <li><a href="#Video1">Vidéo 1</a></li>
+            <li><a href="#Video2">Vidéo 2</a></li>
+            <li><a href="#Audio">Audio</a></li>
+            <li><a href="#Iframe">Iframe</a></li>
+        </ol>
+        
+        <hr>
+        <h1>Manipulation des médias en HTML</h1>
+        <h4 id="Images">Images <span class="material-icons">
+            insert_photo
+            </span></h4>
+        <table>
+            <tbody>
+                <tr>
+                    <td rowspan="2"><img src="C:\Users\Riahi\Desktop\Dossiers WEB\images/nantes.jpg" alt="hello" width="100" height="100"></td>
+                    <td><svg width="300" heigth="200">
+                        <rect width="200" heigth="100" style="fill:r;stroke: width 3;stroke:honeydew">
+                    </svg></td>
+                </tr>
+                
+
+            </tbody>
+        </table>   
+        <h4 id="Video1">Vidéo avec la balise &lt;Iframe&gt;<span class="material-icons">
+            movie
+            </span></h4> 
+        
+        <iframe width="645" height="363" src="https://www.youtube.com/embed/7gwK1dcz0IU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>   
+        <h4 id="Video2">Vidéo avec la balise &lt;video&gt;<span class="material-icons">
+            movie
+            </span></h4>
+        <video width="320" heigth="240" controls>
+            <source src="C:\Users\Riahi\Desktop\Dossiers WEB\vidéos/windtunnel.mp4" type="video/mp4">
+            <source src="C:\Users\Riahi\Desktop\Dossiers WEB\vidéos/windtunnel.ogg" type="video/ogg">
+            <source src="C:\Users\Riahi\Desktop\Dossiers WEB\vidéos/windtunnel.webm" type="video/webm">
+        </video>
+        <h4 id="Audio">Audio<span class="material-icons">
+            audiotrack
+            </span></h4>
+        <audio controls>
+            <source src="C:\Users\Riahi\Desktop\Dossiers WEB\audio/audio.mp3.m4a" type="audio/mp3">
+        </audio>    
+        <h4 id="Iframe">Iframe <span class="material-icons">
+            voicemail
+            </span> <a href="https://www.isen-nantes.fr/" target="iframe">Cliquez ici!</a></h4>
+        <iframe width="500" heigth="400" name="iframe"></iframe>
     </body>
 </html>
